@@ -1,0 +1,44 @@
+The following test cases were automated:
+
+Test case #1 - Verify that border countries match the prepared country
+Preconditions:
+Prepare country codes (e.g. "RUS" for Russia) of the countries with borders from the following mainlands: Europe, North America.
+Steps:
+1. Perform GET request to display country info using the following link and prepared country code:
+https://restcountries.com/v2/alpha?codes=<countryCode>
+Expected result:
+Country info appears.
+2. Copy "name" field and border country codes ("border" list) for the next steps.
+3. Perform GET request to display border country info using the country code from copied "border list":
+https://restcountries.com/v2/alpha?codes=<borderCountryCode>
+Expected result:
+Border country info appears.
+4. Verify that "border" list contains country code from the first step.
+Expected result:
+"border" list contains country code from the first step.
+5. Repeat 3,4 steps for all codes from the first step country.
+Expected result:
+"border" list contains country code from the first step.
+
+Test case #2 - Verify country borders
+Preconditions:
+Prepare several countries with the following data:
+name, country code(e.g. "RUS" for Russia), list of countries that have common borders with selected country.
+Steps:
+1. Perform GET request to get country info using the link and code of country from preconditions:
+https://restcountries.com/v2/alpha?codes=<countryCode>
+Expected result:
+Country info appears.
+2. Verify that name and list of common borders match the info from the response.
+Expected result:
+"border" list from the response matches country codes from the preconditions.
+
+Test case #3 - Perform GET request with non-existent country code
+Preconditions:
+Country code for non-existent country need to be prepared(e.g.: EEE).
+Steps:
+1. 1. Perform GET request to get country info using the link and code of country from preconditions:
+https://restcountries.com/v2/alpha?codes=<non_existentCountryCode>
+Expected result:
+Response:
+Status code 400, message: Not Found
