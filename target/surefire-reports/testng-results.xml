@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
+  <reporter-output>
+  </reporter-output>
+  <suite name="country.tests.TestCountryCodes" duration-ms="18066" started-at="2023-03-29T06:30:22Z" finished-at="2023-03-29T06:30:40Z">
+    <groups>
+    </groups>
+    <test name="Command line test" duration-ms="18066" started-at="2023-03-29T06:30:22Z" finished-at="2023-03-29T06:30:40Z">
+      <class name="country.tests.TestCountryCodes">
+        <test-method status="PASS" signature="verifyCountryBorders(country.model.CountryModel)[pri:0, instance:country.tests.TestCountryCodes@7ac7a4e4]" name="verifyCountryBorders" duration-ms="13831" started-at="2023-03-29T06:30:22Z" description="Verify that border countries match the prepared country" data-provider="preparedCountry" finished-at="2023-03-29T06:30:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CountryModel(name=Russian Federation, code=RUS, borders=[AZE, BLR, CHN, EST, FIN, GEO, KAZ, PRK, LVA, LTU, MNG, NOR, POL, UKR])]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCountryBorders -->
+        <test-method status="PASS" signature="verifyCountryBorders(country.model.CountryModel)[pri:0, instance:country.tests.TestCountryCodes@7ac7a4e4]" name="verifyCountryBorders" duration-ms="1668" started-at="2023-03-29T06:30:36Z" description="Verify that border countries match the prepared country" data-provider="preparedCountry" finished-at="2023-03-29T06:30:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CountryModel(name=United States of America, code=USA, borders=[CAN, MEX])]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCountryBorders -->
+        <test-method status="PASS" signature="verifyCountryInfo(country.model.CountryModel)[pri:0, instance:country.tests.TestCountryCodes@7ac7a4e4]" name="verifyCountryInfo" duration-ms="834" started-at="2023-03-29T06:30:38Z" description="Verify country borders" data-provider="preparedCountry" finished-at="2023-03-29T06:30:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CountryModel(name=Russian Federation, code=RUS, borders=[AZE, BLR, CHN, EST, FIN, GEO, KAZ, PRK, LVA, LTU, MNG, NOR, POL, UKR])]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCountryInfo -->
+        <test-method status="PASS" signature="verifyCountryInfo(country.model.CountryModel)[pri:0, instance:country.tests.TestCountryCodes@7ac7a4e4]" name="verifyCountryInfo" duration-ms="860" started-at="2023-03-29T06:30:39Z" description="Verify country borders" data-provider="preparedCountry" finished-at="2023-03-29T06:30:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CountryModel(name=United States of America, code=USA, borders=[CAN, MEX])]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCountryInfo -->
+        <test-method status="PASS" signature="verifyNonExistentCountryCode()[pri:0, instance:country.tests.TestCountryCodes@7ac7a4e4]" name="verifyNonExistentCountryCode" duration-ms="847" started-at="2023-03-29T06:30:40Z" description="Perform GET request with non-existent country code" finished-at="2023-03-29T06:30:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNonExistentCountryCode -->
+      </class> <!-- country.tests.TestCountryCodes -->
+    </test> <!-- Command line test -->
+  </suite> <!-- country.tests.TestCountryCodes -->
+</testng-results>
