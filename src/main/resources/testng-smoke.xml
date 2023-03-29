@@ -2,7 +2,7 @@
 <suite name="Smoke" verbose = "1">
     <test name="CountryBordersVerification">
         <classes>
-            <class name="country.tests.TestCountryCodes"/>
+            <class name="country.tests.CountryCodesTest"/>
         </classes>
     </test>
 </suite>

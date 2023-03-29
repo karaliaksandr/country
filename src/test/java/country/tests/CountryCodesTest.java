@@ -1,6 +1,6 @@
 package country.tests;
 
-import country.constants.TestData;
+import constants.TestData;
 import country.controllers.CountryController;
 import country.model.CountryModel;
 import country.model.ErrorMessageModel;
@@ -10,7 +10,7 @@ import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-public class TestCountryCodes {
+public class CountryCodesTest {
     private final Service service = new Service();
 
     @Test(description = "Verify that border countries match the prepared country", dataProvider = "preparedCountry")

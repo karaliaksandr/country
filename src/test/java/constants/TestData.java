@@ -1,4 +1,4 @@
-package country.constants;
+package constants;
 
 import country.model.CountryModel;
 import country.model.ErrorMessageModel;
