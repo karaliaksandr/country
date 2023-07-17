@@ -26,6 +26,7 @@ public class CountryCodesTest {
         Response response = new CountryController()
                 .getCountryInfo(countryModel.getCode());
         CountryModel[] countryModels = response.as(CountryModel[].class);
+        System.out.println("logging");
         Assert.assertEquals(countryModel, service.getModelByName(countryModels, countryModel.getName()));
     }
 
