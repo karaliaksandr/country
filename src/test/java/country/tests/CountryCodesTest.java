@@ -39,6 +39,9 @@ public class CountryCodesTest {
         Assert.assertEquals(actualError, expectedError);
         System.out.println("editedOne more time");
         System.out.println("nwe");
+
+        System.out.println("removing config file");
+        System.out.println("adding workaround");
     }
 
     @DataProvider
