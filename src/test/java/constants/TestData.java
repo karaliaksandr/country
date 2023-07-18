@@ -13,4 +13,5 @@ public class TestData {
     public static final ErrorMessageModel NOT_FOUND_ERROR = new ErrorMessageModel(HttpURLConnection.HTTP_NOT_FOUND, "Not Found");
 
     private static final String message = "message";
+    private static final String message2 = "message2";
 }
