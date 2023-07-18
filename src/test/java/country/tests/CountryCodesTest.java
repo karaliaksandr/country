@@ -37,11 +37,8 @@ public class CountryCodesTest {
                 .getCountryInfo(countryModel.getCode());
         ErrorMessageModel actualError = response.as(ErrorMessageModel.class);
         Assert.assertEquals(actualError, expectedError);
-        System.out.println("editedOne more time");
-        System.out.println("nwe");
 
-        System.out.println("removing config file");
-        System.out.println("adding workaround");
+        System.out.println("final config edited");
     }
 
     @DataProvider

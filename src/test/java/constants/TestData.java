@@ -11,4 +11,6 @@ public class TestData {
     public static final CountryModel USA = new CountryModel("United States of America", "USA", Arrays.asList("CAN", "MEX"));
     public static final CountryModel NON_EXISTENT = new CountryModel("Non existent country", "EEE", Arrays.asList(""));
     public static final ErrorMessageModel NOT_FOUND_ERROR = new ErrorMessageModel(HttpURLConnection.HTTP_NOT_FOUND, "Not Found");
+
+    private static final String message = "message";
 }
