@@ -38,7 +38,9 @@ public class CountryCodesTest {
         ErrorMessageModel actualError = response.as(ErrorMessageModel.class);
         Assert.assertEquals(actualError, expectedError);
 
-        System.out.println("final config edited");
+        System.out.println("edited");
+
+        System.out.println("new line");
     }
 
     @DataProvider
