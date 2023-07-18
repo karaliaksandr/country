@@ -37,7 +37,8 @@ public class CountryCodesTest {
                 .getCountryInfo(countryModel.getCode());
         ErrorMessageModel actualError = response.as(ErrorMessageModel.class);
         Assert.assertEquals(actualError, expectedError);
-        System.out.println("edited");
+        System.out.println("editedOne more time");
+        System.out.println("nwe");
     }
 
     @DataProvider
